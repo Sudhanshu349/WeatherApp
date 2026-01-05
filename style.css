@@ -174,4 +174,103 @@
     from { transform: translateY(8px); }
     to { transform: translateY(-8px); }
   }
+
+
+  /* 📱 Mobile Responsiveness */
+@media (max-width: 480px) {
+
+    body {
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .app {
+      width: 100%;
+      max-width: 100%;
+      padding: 18px;
+      border-radius: 18px;
+    }
+  
+    .title {
+      text-align: center;
+      font-size: 20px;
+    }
+  
+    /* Search bar */
+    .search {
+      gap: 6px;
+    }
+  
+    .search input {
+      padding: 12px;
+      font-size: 15px;
+    }
+  
+    .search button {
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    /* Weather main */
+    .main {
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    .weather img {
+      width: 70px;
+    }
+  
+    .weather h1 {
+      font-size: 44px;
+    }
+  
+    .city {
+      font-size: 14px;
+    }
+  
+    /* Stats cards */
+    .stats {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  
+    .stats div {
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    /* Forecast scroll */
+    .forecast {
+      gap: 8px;
+      padding-bottom: 5px;
+    }
+  
+    .day {
+      min-width: 85px;
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .day img {
+      width: 36px;
+    }
+  
+    /* History chips */
+    .history ul {
+      gap: 5px;
+    }
+  
+    .history li {
+      font-size: 11px;
+      padding: 6px 10px;
+    }
+  
+    /* Sun animation */
+    .sun {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  
   
