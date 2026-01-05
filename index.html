@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app glass">
+    <h2 class="title">Weather</h2>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Search city" />
+      <button onclick="getWeather()">🔍</button>
+    </div>
+
+    <p id="error"></p>
+
+    <div class="history">
+      <ul id="historyList"></ul>
+    </div>
+
+    <div class="weather fade" id="weatherBox">
+      <div class="main">
+        <img id="icon" />
+        <h1 id="temp"></h1>
+      </div>
+      <p id="condition"></p>
+      <p class="city" id="city"></p>
+
+      <div class="stats">
+        <div><span id="humidity"></span>%<small>Humidity</small></div>
+        <div><span id="wind"></span> km/h<small>Wind</small></div>
+        <div><span id="feels"></span>°C<small>Feels</small></div>
+      </div>
+    </div>
+
+    <div id="forecast" class="forecast"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
